@@ -1,0 +1,160 @@
+<!Doctype html>
+<html>
+<head>
+        <title>Web form</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+       
+		tfoot {
+					background:blue;
+					text-align:center;
+					
+										}
+    table, tr, td {
+				border: 1px solid black;
+				border-spacing:0
+				
+						
+										}
+	
+		
+		.left  {
+					text-align:right;
+					width:10mm;
+										}
+		.bau  { 		
+					max-width:15mm
+				
+										}
+		tbody{    background:yellow;
+									      }
+	      tfoot input{    background:red;
+										}
+		
+		
+			
+								
+		
+      </style>
+</head>
+<body>
+        <form method="get" action="#">
+            <table>
+			 
+			 <thead></thead>
+				<tfoot>
+                    <tr>
+                        <td colspan="2">
+                        <input type="submit" value="Submit"  />
+                        <input type="reset" value="clear this form" />
+                        </td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                        <tr>
+                            <td class="left"><label for="1">Last name</label> 
+                            </td>
+                            <td><input type="text" id="1" placeholder="Vasilev"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left"><label for="2">First name</label>
+                            </td>
+                            <td><input type="text" id="2" placeholder="Yordan" />
+                             </td>
+                        </tr>
+                        <tr>
+                            <td class="left"><label for="3">Address</label>
+                            </td>
+                            <td><textarea id="3" placeholder="Samuil 60 str"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left"><label for="4">City</label>
+                            </td>
+                            <td><input type="text" id="4" placeholder="samuilovo" />
+                                <label for="5">state</label>
+                                <input class="bau" type="text" id="5" />
+                            </td>
+                         </tr>
+                        <tr>
+                            <td class="left"><label for="6">ZipPostalCode</label>
+                            </td>
+                            <td><input type="text" id="6" placeholder="8865"  />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left"><label for="7">Country</label>
+                            </td>
+                            <td><select id="7">
+                                    <option>Greece</option>
+                                    <option selected="selected">Bulgaria</option>
+                                    <option>Denmark</option>
+                                    <option>USA</option>
+                                    <option>Tyrkie</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left"><label for="8">Phone(country cod,area code,number)</label>
+                            </td>
+                            <td><input class="bau" type="text" id="8" placeholder="+359" />
+                                <input class="bau" type="text" placeholder="888" />
+                                <input class="bau" type="text" placeholder="3351967" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left"><label for="9">Email</label>
+                            </td>
+                            <td><input type="text" id="9" placeholder="henry_1987@abv.bg" />  
+                            </td>
+                        </tr>
+                        <tr>
+                                <td class="left"> Birth Date </td>
+                                <td>
+                                    <label for="10">Month</label>
+                                    <input type="text" class="bau" placeholder="08" id="10" />
+                                    <label for="11">Day</label>
+                                    <input type="text" class="bau" placeholder="09" id="11"/>
+                                    <label for="12" >Year(four digit)</label>
+                                    <input type="text" class="bau" id="12" placeholder="1987" pattern="[0-9]{4}" required="required" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                                <td class="left">
+                                        Gender
+                                        
+                                </td>
+                                <td>
+                                        <select>
+                                            <option selected="selected">Male</option>
+                                            <option>Female</option>
+                                            <option>Shemale :)</option>
+                                        </select>
+                                </td>
+                                
+                        </tr>
+                        <tr>
+                                <td class="left">
+                                    Starting date
+                                </td>
+                                <td>
+                                    <input type="radio" name="gender" value="January 2014" />January 2014
+                                    <input type="radio" name="gender" value="April2014" />Never
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="left">
+                                    <label for="14">Comments/Questions</label></td>
+                                    <td><textarea placeholder="Write Something else about you" id="14"></textarea>
+                                </td>
+                        </tr>
+                        
+                        
+                </tbody>
+            </table>
+    
+        </form>
+</body>
+</html>
